@@ -1,0 +1,98 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>频率词统计报告</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1, h2 { color: #333; }
+                table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                tr:nth-child(even) { background-color: #f9f9f9; }
+                .word { font-weight: bold; }
+                .count { text-align: center; }
+                .percentage { text-align: center; }
+                .titles { max-width: 500px; }
+                .source { color: #666; font-style: italic; }
+                .error { color: #d9534f; }
+                .news-link { 
+                    color: #007bff; 
+                    text-decoration: none; 
+                    border-bottom: 1px dotted #007bff;
+                }
+                .news-link:hover { 
+                    color: #0056b3; 
+                    text-decoration: underline; 
+                }
+                .news-link:visited { 
+                    color: #6f42c1; 
+                }
+                .no-link { 
+                    color: #333; 
+                }
+                .new-title {
+                    background-color: #fff3cd;
+                    border: 1px solid #ffc107;
+                    border-radius: 3px;
+                    padding: 2px 6px;
+                    margin: 2px 0;
+                }
+                .new-section {
+                    background-color: #d1ecf1;
+                    border: 1px solid #bee5eb;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-top: 10px;
+                }
+                .new-section h3 {
+                    color: #0c5460;
+                    margin-top: 0;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>频率词统计报告</h1>
+        <p>总标题数: 255</p><p>生成时间: 2025-08-12 21:23:01</p>
+            <table>
+                <tr>
+                    <th>排名</th>
+                    <th>频率词</th>
+                    <th>出现次数</th>
+                    <th>占比</th>
+                    <th>相关标题</th>
+                </tr>
+        
+                <tr>
+                    <td>1</td>
+                    <td class="word">大学 校园</td>
+                    <td class="count">6</td>
+                    <td class="percentage">2.35%</td>
+                    <td class="titles">[zhihu] <a href="https://www.zhihu.com/question/1938647468364493894" target="_blank" class="news-link">19 岁女大学生在江西一景区被男子捅伤致死，警方通报「嫌疑人已被刑拘，有精神病史」，他将承担哪些责任？</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 21时23分</font><br><div class='new-title'>🆕 [百度热搜] <a href="https://www.baidu.com/s?wd=%E5%A5%B3%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%8B%92%E7%BB%9D%E6%90%AD%E8%AE%AA%E8%A2%AB%E7%94%B7%E5%AD%90%E6%9D%80%E5%AE%B3" target="_blank" class="news-link">女大学生拒绝搭讪被男子杀害</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 21时23分</font></div><br><div class='new-title'>🆕 [weibo] <a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%2319%E5%B2%81%E9%81%87%E5%AE%B3%E5%A5%B3%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%B2%E5%8F%8B%E5%8F%91%E5%A3%B0%23&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26q%3D%252319%25E5%25B2%2581%25E9%2581%2587%25E5%25AE%25B3%25E5%25A5%25B3%25E5%25A4%25A7%25E5%25AD%25A6%25E7%2594%259F%25E4%25BA%25B2%25E5%258F%258B%25E5%258F%2591%25E5%25A3%25B0%2523%26cate%3D5001%26stream_entry_id%3D31%26realpos%3D10%26flag%3D1%26dgr%3D0%26band_rank%3D10%26filter_type%3Drealtimehot%26lcate%3D5001%26c_type%3D31%26pos%3D11%26display_time%3D1755003967%26pre_seqid%3D1755003967649057575872" target="_blank" class="news-link">19岁遇害女大学生亲友发声</a> [10] <font color='grey'>- 21时23分</font></div><br>[weibo] <a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%2319%E5%B2%81%E5%A5%B3%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%AF%E5%8C%BA%E5%86%85%E9%81%AD%E6%8D%85%E5%A4%9A%E5%88%80%E8%BA%AB%E4%BA%A1%23&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26q%3D%252319%25E5%25B2%2581%25E5%25A5%25B3%25E5%25A4%25A7%25E5%25AD%25A6%25E7%2594%259F%25E6%2599%25AF%25E5%258C%25BA%25E5%2586%2585%25E9%2581%25AD%25E6%258D%2585%25E5%25A4%259A%25E5%2588%2580%25E8%25BA%25AB%25E4%25BA%25A1%2523%26cate%3D5001%26stream_entry_id%3D31%26realpos%3D11%26flag%3D4%26dgr%3D0%26band_rank%3D11%26filter_type%3Drealtimehot%26lcate%3D5001%26c_type%3D31%26pos%3D12%26display_time%3D1755003967%26pre_seqid%3D1755003967649057575872" target="_blank" class="news-link">19岁女大学生景区内遭捅多刀身亡</a> [11] <font color='grey'>- 21时23分</font><br>[百度热搜] <a href="https://www.baidu.com/s?wd=%E8%AD%A6%E6%96%B9%E9%80%9A%E6%8A%A5%E7%94%B7%E5%AD%90%E6%99%AF%E5%8C%BA%E5%88%BA%E6%AD%BB%E5%A5%B3%E5%A4%A7%E5%AD%A6%E7%94%9F" target="_blank" class="news-link">警方通报男子景区刺死女大学生</a> [12] <font color='grey'>- 21时23分</font><br>[百度热搜] <a href="https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%A9%E7%A7%B0%E8%80%83%E4%B8%8A%E5%A4%A7%E5%AD%A6%E7%88%B6%E6%AF%8D%E5%AB%8C%E8%BF%9C%E4%B8%8D%E7%BB%99%E8%B7%AF%E8%B4%B9" target="_blank" class="news-link">女孩称考上大学父母嫌远不给路费</a> [23] <font color='grey'>- 21时23分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td class="word">暑期</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[今日头条] <a href="https://www.toutiao.com/trending/7536266376055672339/" target="_blank" class="news-link">暑期游“点燃”文旅新活力</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 21时23分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td class="word"># --- 热点与事件 --- 疫情防控 疫苗 食品安全 医疗事故 医患关系 细菌</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles"><div class='new-title'>🆕 [bilibili 热搜] <a href="https://search.bilibili.com/all?keyword=731%E7%BB%86%E8%8F%8C%E6%88%98%E5%B7%A5%E5%85%B7%E8%A2%AB%E5%BD%93%E6%88%90%E4%B8%93%E5%88%A9%E7%95%99%E5%AD%98" target="_blank" class="news-link">731细菌战工具被当成专利留存</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 21时23分</font></div></td>
+                </tr>
+            
+            </table>
+        
+            <div class="new-section">
+                <h3>🆕 本次新增热点新闻 (共 3 条)</h3>
+            <h4>百度热搜 (1 条)</h4><ul><li><a href="https://www.baidu.com/s?wd=%E5%A5%B3%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%8B%92%E7%BB%9D%E6%90%AD%E8%AE%AA%E8%A2%AB%E7%94%B7%E5%AD%90%E6%9D%80%E5%AE%B3" target="_blank" class="news-link">女大学生拒绝搭讪被男子杀害</a> <font color='red'><strong>[5]</strong></font></li></ul><h4>bilibili 热搜 (1 条)</h4><ul><li><a href="https://search.bilibili.com/all?keyword=731%E7%BB%86%E8%8F%8C%E6%88%98%E5%B7%A5%E5%85%B7%E8%A2%AB%E5%BD%93%E6%88%90%E4%B8%93%E5%88%A9%E7%95%99%E5%AD%98" target="_blank" class="news-link">731细菌战工具被当成专利留存</a> <font color='red'><strong>[3]</strong></font></li></ul><h4>weibo (1 条)</h4><ul><li><a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%2319%E5%B2%81%E9%81%87%E5%AE%B3%E5%A5%B3%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%B2%E5%8F%8B%E5%8F%91%E5%A3%B0%23&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26q%3D%252319%25E5%25B2%2581%25E9%2581%2587%25E5%25AE%25B3%25E5%25A5%25B3%25E5%25A4%25A7%25E5%25AD%25A6%25E7%2594%259F%25E4%25BA%25B2%25E5%258F%258B%25E5%258F%2591%25E5%25A3%25B0%2523%26cate%3D5001%26stream_entry_id%3D31%26realpos%3D10%26flag%3D1%26dgr%3D0%26band_rank%3D10%26filter_type%3Drealtimehot%26lcate%3D5001%26c_type%3D31%26pos%3D11%26display_time%3D1755003967%26pre_seqid%3D1755003967649057575872" target="_blank" class="news-link">19岁遇害女大学生亲友发声</a> [10]</li></ul></div>
+        </body>
+        </html>
+        
